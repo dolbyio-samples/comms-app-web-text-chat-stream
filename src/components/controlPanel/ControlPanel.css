@@ -1,0 +1,9 @@
+#control-panel-container {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: darkslateblue;
+  background: linear-gradient(45deg, purple, blue);
+}

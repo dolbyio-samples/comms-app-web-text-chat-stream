@@ -1,0 +1,10 @@
+.str-chat-channel {
+  max-height: 61vh;
+}
+
+#loading-chat-message {
+  padding-top: 150px;
+  text-align: center;
+  color: lightslategray;
+  font-size: 2vh;
+}

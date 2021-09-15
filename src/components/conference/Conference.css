@@ -1,0 +1,55 @@
+#full-screen-video-container {
+  width: 100vw;
+  height: 96vh;
+  background-color: black;
+  background: linear-gradient(0.75turn, black, rgb(49, 49, 49));
+}
+
+#guest-view-container {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 67vw;
+  height: 89vh;
+}
+
+.guest-video-container-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  color: white;
+  opacity: 0.5;
+}
+
+#sidebar-container {
+  width: 33vw;
+  height: 100vh;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+#self-view-container {
+  top: 0;
+  right: 0;
+  width: 33vw;
+  height: 25vh;
+  z-index: 10;
+}
+
+.self-video-container-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  color: white;
+  opacity: 0.5;
+}
+
+#plugins-container {
+  z-index: 10;
+  width: 33vw;
+  height: 68vh;
+  background: #ffff;
+}
