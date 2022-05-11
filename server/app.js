@@ -7,7 +7,6 @@ const StreamChat = require('stream-chat').StreamChat;
 
 const express = require('express');
 const cors = require('cors');
-const request = require('request');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -31,7 +30,6 @@ app.get('/api/auth/dolbyio', (req, res, next) => {
   console.log('Getting Dolby.io token...');
   const options = {
     method: 'POST',
-    url: 'https://session.voxeet.com/v1/oauth2/token',
     headers: {
       Authorization: 'Basic ' + auth,
     },
@@ -41,23 +39,25 @@ app.get('/api/auth/dolbyio', (req, res, next) => {
     json: true,
   };
 
-  try {
-    request(options, (error, response, body) => {
-      if (body.error) {
-        console.log(
-          `Unable to retrieve authentication token for Dolby.io: ${body.error}`
-        );
-        throw error;
-      }
-      const token = {
-        accessToken: body.access_token,
-        refreshToken: body.refresh_token,
-      };
-      res.json(token);
-    });
-  } catch (err) {
-    return next(err);
-  }
+  fetch("https://session.voxeet.com/v1/oauth2/token", options)
+  .then(response => response.json())
+  .then(body => {
+    if (body.error) {
+      console.log(
+        `Unable to retrieve authentication token for Dolby.io: ${body.error}`
+      );
+      throw body.error;
+    }
+    const token = {
+      accessToken: body.access_token,
+      refreshToken: body.refresh_token,
+    };
+    res.json(token);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+    return next(error);
+  })
 });
 
 const serverClient = StreamChat.getInstance(streamKey, streamSecret);
