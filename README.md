@@ -38,4 +38,4 @@ Run:
 npm start
 ```
 
-This will initiate a token server to return any API keys as well as a React application in the browser that participants will auto-join. To test locally, the application can be opened in two seperate tabs in the browser. By default, this will be found at `localhost:3000`.
+This will initiate a token server to return any API keys as well as a React application in the browser that participants will auto-join. To test locally, the application can be opened in two separate tabs in the browser. By default, this will be found at `localhost:3000`.
