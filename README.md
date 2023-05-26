@@ -5,13 +5,13 @@
 [![License](https://img.shields.io/github/license/dolbyio-samples/template-repo)](LICENSE)
 
 Adding shields would also be amazing -->
+![Blog Picture](https://dolby.io/wp-content/uploads/2022/06/Synchronizing-Video-Users-with-GetStreamIO-Chat-Messaging-and-DolbyIO_.jpg)
+# Synchronizing Video Users with GetStream.io Chat Messaging and Dolby.io
 
-# Integrating Chat Using Stream
-
-Integrating chat functionality into an application that utilizes Dolby.io's Stream API. 
+This repository integrates chat functionality into an application that utilizes Dolby.io's Stream API. 
 
 # Overview
-This React application demonstrates the integration of Stream's chat messaging service into a video conference application built with Dolby.io. Chat integration with streaming applications can be useful for enabling users to communicate with each other while watching a live stream or participating in interactive sessions.
+[In this blog](https://dolby.io/blog/synchronizing-video-users-with-getstream-io-chat-messaging-and-dolby-io/), a React application demonstrates the integration of Stream's chat messaging service into a video conference application built with Dolby.io. Chat integration with streaming applications can be useful for enabling users to communicate with each other while watching a live stream or participating in interactive sessions.
 
 # Requirements 
 In order to make use of this demo you will need:
