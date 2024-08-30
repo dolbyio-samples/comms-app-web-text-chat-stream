@@ -1,10 +1,5 @@
-<!--
-[![Build Package](https://github.com/dolbyio-samples/template-repo/actions/workflows/build-package.yml/badge.svg)](https://github.com/dolbyio-samples/template-repo/actions/workflows/build-package.yml)
-[![Publish Package](https://github.com/dolbyio-samples/template-repo/actions/workflows/publish-package.yml/badge.svg)](https://github.com/dolbyio-samples/template-repo/actions/workflows/publish-package.yml)
-[![npm](https://img.shields.io/npm/v/dolbyio-samples/template-repo)](https://www.npmjs.com/package/dolbyio-samples/template-repo)
-[![License](https://img.shields.io/github/license/dolbyio-samples/template-repo)](LICENSE)
+# :warning: This repository is no longer maintained :warning:
 
-Adding shields would also be amazing -->
 ![Blog Picture](https://dolby.io/wp-content/uploads/2022/06/Synchronizing-Video-Users-with-GetStreamIO-Chat-Messaging-and-DolbyIO_.jpg)
 # Synchronizing Video Users with GetStream.io Chat Messaging and Dolby.io
 
